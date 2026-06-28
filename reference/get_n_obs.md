@@ -105,7 +105,6 @@ get_n_obs(mica, species = NULL)
 
 # Get number of observations of Anas platyrhynchos (scientific name)
 get_n_obs(mica, species = "Anas platyrhynchos")
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 4 × 3
 #>   deploymentID                         scientificName         n
 #>   <chr>                                <chr>              <int>
@@ -117,7 +116,6 @@ get_n_obs(mica, species = "Anas platyrhynchos")
 # Get number of observations of eurasian beaver (vernacular names)
 get_n_obs(mica, species = "eurasian beaver")
 #> Scientific name of eurasian beaver: Castor fiber
-#> There are 3 deployments without observations: 29b7d356-4bb4-4ec4-b792-2af5cc32efa8, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 4 × 3
 #>   deploymentID                         scientificName     n
 #>   <chr>                                <chr>          <int>
@@ -128,7 +126,6 @@ get_n_obs(mica, species = "eurasian beaver")
 
 # Case insensitive
 get_n_obs(mica, species = "Anas plaTYrhYnchoS")
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 4 × 3
 #>   deploymentID                         scientificName         n
 #>   <chr>                                <chr>              <int>
@@ -138,7 +135,6 @@ get_n_obs(mica, species = "Anas plaTYrhYnchoS")
 #> 4 7ca633fa-64f8-4cfc-a628-6b0c419056d7 Anas platyrhynchos     0
 get_n_obs(mica, species = "EUrasian beavER")
 #> Scientific name of EUrasian beavER: Castor fiber
-#> There are 3 deployments without observations: 29b7d356-4bb4-4ec4-b792-2af5cc32efa8, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 4 × 3
 #>   deploymentID                         scientificName     n
 #>   <chr>                                <chr>          <int>
@@ -149,7 +145,6 @@ get_n_obs(mica, species = "EUrasian beavER")
 
 # Specify life stage
 get_n_obs(mica, life_stage = "subadult")
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 36 × 3
 #>    deploymentID                         scientificName         n
 #>    <chr>                                <chr>              <int>
@@ -167,7 +162,6 @@ get_n_obs(mica, life_stage = "subadult")
 
 # Specify sex
 get_n_obs(mica, sex = "female")
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 36 × 3
 #>    deploymentID                         scientificName         n
 #>    <chr>                                <chr>              <int>
@@ -185,7 +179,6 @@ get_n_obs(mica, sex = "female")
 
 # Specify both sex and life stage
 get_n_obs(mica, sex = "unknown", life_stage = "adult")
-#> There are 3 deployments without observations: 29b7d356-4bb4-4ec4-b792-2af5cc32efa8, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 36 × 3
 #>    deploymentID                         scientificName         n
 #>    <chr>                                <chr>              <int>

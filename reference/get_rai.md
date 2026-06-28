@@ -112,7 +112,6 @@ get_rai(mica, species = "all")
 
 # Selected species
 get_rai(mica, species = c("Anas platyrhynchos", "Martes foina"))
-#> There are 2 deployments without observations: 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 8 × 3
 #>   deploymentID                         scientificName       rai
 #>   <chr>                                <chr>              <dbl>
@@ -129,7 +128,6 @@ get_rai(mica, species = c("Anas platyrhynchos", "Martes foina"))
 get_rai(mica, species = c("mallard", "steenmarter"))
 #> Scientific name of mallard: Anas platyrhynchos
 #> Scientific name of steenmarter: Martes foina
-#> There are 2 deployments without observations: 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 8 × 3
 #>   deploymentID                         scientificName       rai
 #>   <chr>                                <chr>              <dbl>
@@ -145,7 +143,6 @@ get_rai(mica, species = c("mallard", "steenmarter"))
 # Mixed scientific and vernacular names
 get_rai(mica, species = c("Anas platyrhynchos", "steenmarter"))
 #> Scientific name of steenmarter: Martes foina
-#> There are 2 deployments without observations: 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 8 × 3
 #>   deploymentID                         scientificName       rai
 #>   <chr>                                <chr>              <dbl>
@@ -160,7 +157,6 @@ get_rai(mica, species = c("Anas platyrhynchos", "steenmarter"))
 
 # Species parameter is case insensitive
 get_rai(mica, species = c("ANAS plAtyRhynChOS"))
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 4 × 3
 #>   deploymentID                         scientificName       rai
 #>   <chr>                                <chr>              <dbl>
@@ -171,7 +167,6 @@ get_rai(mica, species = c("ANAS plAtyRhynChOS"))
 
 # Specify sex
 get_rai(mica, sex = "female")
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 36 × 3
 #>    deploymentID                         scientificName       rai
 #>    <chr>                                <chr>              <dbl>
@@ -187,7 +182,6 @@ get_rai(mica, sex = "female")
 #> 10 577b543a-2cf1-4b23-b6d2-cda7e2eac372 Anas platyrhynchos   0  
 #> # ℹ 26 more rows
 get_rai(mica, sex = c("female", "unknown"))
-#> There are 1 deployments without observations: 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 #> # A tibble: 36 × 3
 #>    deploymentID                         scientificName       rai
 #>    <chr>                                <chr>              <dbl>
@@ -205,7 +199,6 @@ get_rai(mica, sex = c("female", "unknown"))
 
 # Specify life stage
 get_rai(mica, life_stage = "adult")
-#> There are 1 deployments without observations: 62c200a9-0e03-4495-bcd8-032944f6f5a1
 #> # A tibble: 36 × 3
 #>    deploymentID                         scientificName       rai
 #>    <chr>                                <chr>              <dbl>
@@ -221,7 +214,6 @@ get_rai(mica, life_stage = "adult")
 #> 10 577b543a-2cf1-4b23-b6d2-cda7e2eac372 Anas platyrhynchos   0  
 #> # ℹ 26 more rows
 get_rai(mica, life_stage = c("adult", "subadult"))
-#> There are 1 deployments without observations: 62c200a9-0e03-4495-bcd8-032944f6f5a1
 #> # A tibble: 36 × 3
 #>    deploymentID                         scientificName       rai
 #>    <chr>                                <chr>              <dbl>

@@ -95,7 +95,6 @@ observations:
 map_dep(mica,
         feature = "n_obs",
         species = "Anas platyrhynchos")
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 Notice how zero values are also visualized by a specific icon for ease
@@ -111,7 +110,6 @@ map_dep(
   species = "Anas platyrhynchos",
   sex = c("female", "unknown")
 )
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 and life stage:
@@ -123,7 +121,6 @@ map_dep(
   "n_obs",
   life_stage = c("unknown", "subadult")
 )
-#> There are 2 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 #### Number of individuals
@@ -144,7 +141,6 @@ As for observations, you can specify a species:
 map_dep(mica,
         feature = "n_individuals",
         species = "Anas platyrhynchos")
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 and filter by sex and/or life stage:
@@ -157,7 +153,6 @@ map_dep(
   species = "Anas platyrhynchos",
   sex = c("female", "unknown")
 )
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 #### RAI
@@ -170,7 +165,6 @@ To visualize the Relative Abundance Index (RAI) for a species, set
 map_dep(mica,
         feature = "rai",
         species = "Anas platyrhynchos")
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 **Notice that in this package the RAI is normalized over a deployment
@@ -187,7 +181,6 @@ map_dep(
   species = "Anas platyrhynchos",
   sex = c("female", "unknown")
 )
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 Common names are allowed as values of `species` as well:
@@ -198,7 +191,6 @@ map_dep(mica,
         feature = "rai",
         species = "great herons")
 #> Scientific name of great herons: Ardea
-#> There are 3 deployments without observations: 29b7d356-4bb4-4ec4-b792-2af5cc32efa8, 577b543a-2cf1-4b23-b6d2-cda7e2eac372 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 Values of `species` are also interpreted case insensitive:
@@ -208,7 +200,6 @@ Values of `species` are also interpreted case insensitive:
 map_dep(mica,
         feature = "rai",
         species = "CastoR FIBer")
-#> There are 3 deployments without observations: 29b7d356-4bb4-4ec4-b792-2af5cc32efa8, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 If `species` is not specified or is wrong, an informative error message
@@ -235,7 +226,6 @@ observations. Set `feature = "rai_individuals"`:
 map_dep(mica,
         feature = "rai_individuals",
         species = "Anas platyrhynchos")
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 Everything described in previous section about visualizing RAI holds
@@ -327,7 +317,6 @@ unknown_species_vs_no_obs$data$observations <-
 # create new map
 map_dep(unknown_species_vs_no_obs,
         feature = "n_species")
-#> There are 1 deployments without observations: 62c200a9-0e03-4495-bcd8-032944f6f5a1
 ```
 
 ### Use a color palette
@@ -390,7 +379,6 @@ map_dep(
   zero_values_icon_url = "https://img.icons8.com/color/48/000000/futurama-fry.png",
   zero_values_icon_size = 50
 )
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 Typically the colour is part of the URL. Here below two examples where
@@ -405,7 +393,6 @@ map_dep(
   zero_values_icon_url = 
     "https://img.icons8.com/ios-glyphs/30/2ECC71/multiply.png"
 )
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 or the INBO fuchsia (#C04384):
@@ -419,7 +406,6 @@ map_dep(
   zero_values_icon_url = 
     "https://img.icons8.com/ios-glyphs/30/C04384/multiply.png"
 )
-#> There are 3 deployments without observations: 577b543a-2cf1-4b23-b6d2-cda7e2eac372, 62c200a9-0e03-4495-bcd8-032944f6f5a1 and 7ca633fa-64f8-4cfc-a628-6b0c419056d7
 ```
 
 Modifying the default value (`"black"`) can be useful as the color of
