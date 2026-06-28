@@ -34,9 +34,12 @@ observations of all life stage classes are taken into account.}
 \item{datapkg}{Deprecated. Use \code{package} instead.}
 }
 \value{
-A tibble data frame with the following columns: - \code{deploymentID}:
-Deployment unique identifier. - \code{scientificName}: Scientific name. - \code{rai}:
-Relative abundance index.
+A tibble data frame with the following columns:
+\itemize{
+\item \code{deploymentID}: Deployment unique identifier.
+\item \code{scientificName}: Scientific name.
+\item \code{rai}:  Relative abundance index.
+}
 }
 \description{
 Gets the RAI (Relative Abundance Index) per deployment. The RAI is normalized
@@ -75,14 +78,12 @@ get_rai(mica, pred_gte("latitude", 51.18))
 }
 \seealso{
 Other exploration functions: 
-\code{\link{get_cam_op}()},
 \code{\link{get_custom_effort}()},
 \code{\link{get_effort}()},
 \code{\link{get_n_individuals}()},
 \code{\link{get_n_obs}()},
 \code{\link{get_n_species}()},
 \code{\link{get_rai_individuals}()},
-\code{\link{get_record_table}()},
 \code{\link{get_scientific_name}()},
 \code{\link{get_species}()}
 }
