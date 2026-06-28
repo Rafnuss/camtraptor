@@ -57,6 +57,7 @@ Some more details about the columns returned:
 \item \code{Station}: Character, station names, as found in the deployment column
 defined in parameter \code{stationCol}.
 \item \code{Species}: Character, the scientific name of the observed species.
+\item \code{n}: Numeric, the number of individuals of the observed species.
 \item \code{DateTimeOriginal}: Datetime object, as found in column \code{timestamp} of
 \code{observations}, in UTC format.
 \item \code{Date}: Date object, the date part of \code{DateTimeOriginal}, in UTC format.
@@ -73,6 +74,10 @@ independent record of a given species at a certain location.
 as defined in column \code{filePath} of \code{media}.
 \item \code{Filename}: List, file names of the images linked to the given record,
 as defined in column \code{fileName} of \code{media}.
+\item \code{Latitude}: Numeric, latitude of the station, based on \code{deploymentID} of the observations.
+\item \code{Longitude}: Numeric, longitude of the station, based on \code{deploymentID} of the observations.
+\item \code{clock}: Numeric, clock time in radians.
+\item \code{solar}: Numeric, solar time in radians. Calculated using \code{overlap::sunTime}, which essentially uses the approach described in \href{https://doi.org/10.1111/j.1469-7998.2011.00864.x}{Nouvellet et al. (2012)}.
 }
 }
 \description{
@@ -133,16 +138,8 @@ get_record_table(mica_dup, removeDuplicateRecords = FALSE)
 get_record_table(mica, pred_gte("latitude", 51.18))
 }
 \seealso{
-Other exploration functions: 
+Other camtrapR-derived functions: 
 \code{\link{get_cam_op}()},
-\code{\link{get_custom_effort}()},
-\code{\link{get_effort}()},
-\code{\link{get_n_individuals}()},
-\code{\link{get_n_obs}()},
-\code{\link{get_n_species}()},
-\code{\link{get_rai}()},
-\code{\link{get_rai_individuals}()},
-\code{\link{get_scientific_name}()},
-\code{\link{get_species}()}
+\code{\link{get_detection_history}()}
 }
-\concept{exploration functions}
+\concept{camtrapR-derived functions}
